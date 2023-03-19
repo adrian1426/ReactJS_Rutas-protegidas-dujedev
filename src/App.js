@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import Product from './components/Product';
 import ProductsPage from './pages/ProductsPage';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
       <Routes>
         <Route path='/' element={<h1>Home</h1>} />
         <Route path='/products' element={<ProductsPage />} />
+        <Route path='/products/:id' element={<Product />} />
         <Route path='/cart' element={<h1>Carrito de compra</h1>} />
         {/* <Route path='*' element={<h1>Not Found</h1>} /> */}
         <Route path='*' element={<Navigate to='/' />} />
