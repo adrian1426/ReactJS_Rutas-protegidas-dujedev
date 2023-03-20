@@ -1,10 +1,10 @@
-import React from 'react';
+const LoginPage = (props) => {
+  const { handleLogin } = props;
 
-const LoginPage = () => {
   return (
     <div>
       <h2>Login</h2>
-      <button>Ingresar</button>
+      <button onClick={handleLogin}>Ingresar</button>
     </div>
   );
 };
